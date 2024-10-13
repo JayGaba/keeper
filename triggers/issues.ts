@@ -21,7 +21,7 @@ const IssuesTrigger: Trigger<typeof IssuesWorkflow.definition> = {
     filter: {
       version: 1,
       root: {
-        statement: "{{data.text}} CONTAINS issues",
+        statement: "{{data.text}} MATCHES '^<@[A-Z0-9]+>\\s+issues$'",
       },
     },
   },

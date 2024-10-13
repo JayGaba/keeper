@@ -18,7 +18,7 @@ const pingTrigger: Trigger<typeof PingWorkflow.definition> = {
     filter: {
       version: 1,
       root: {
-        statement: "{{data.text}} CONTAINS ping",
+        statement: "{{data.text}} MATCHES '^<@[A-Z0-9]+>\\s+issues$'",
       },
     },
   },
