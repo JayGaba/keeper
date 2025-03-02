@@ -1,6 +1,6 @@
 # Blank Template
 
-This is a blank template used to build out automations using the Slack CLI.
+This is a blank template optimized to build out automations using the Slack CLI.
 
 **Guide Outline**:
 
